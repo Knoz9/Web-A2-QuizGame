@@ -1,0 +1,171 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e7eaf6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Start Screen */
+#start-screen {
+    text-align: center;
+}
+
+/* Quiz Container */
+#quiz-container {
+    display: none;
+    text-align: center;
+}
+
+/* Progress Bar */
+#progress-bar {
+    height: 20px;
+    background-color: #008000;
+    margin-bottom: 20px;
+    width: 100%; /* Start with full width */
+    transition: width 0.2s linear; /* Smooth transition for width change */
+}
+
+
+/* Timer */
+.timer {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Question */
+#question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Answer Section */
+.answers label {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.answers label:hover {
+    background-color: #f0f0f0;
+}
+
+/* Text Input */
+#text-answer {
+    padding: 10px;
+    width: 96%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    background-color: #5fc05c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f7e00;
+}
+
+/* Result Screen */
+#result-screen {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  #result-message {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }  
+  
+
+/* Link */
+a {
+    color: #5c6bc0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* High Score Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Styling Rows Based on Rank */
+  tr:nth-child(2) { /* Gold row */
+    background-color: #ffd700;
+  }
+  
+  tr:nth-child(3) { /* Silver row */
+    background-color: #c0c0c0;
+  }
+  
+  tr:nth-child(4) { /* Bronze row */
+    background-color: #cd7f32;
+  }
+  
+  tr:nth-child(n+5) { /* Other rows */
+    background-color: #f2f2f2;
+  }
+  
+  /* Optional: Styling for the Trophy Icons */
+  td:first-child {
+    font-size: 1.2em;
+  }
+
+  .start-screen img {
+    width: 300px; /* Set the width to your desired size */
+    height: auto; /* Maintain the aspect ratio */
+}
+  
+  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="init.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <section id="start-screen" class="start-screen">
+            <img src="img/quiz.png" alt="Web Programming Quiz">
+            <form id="nickname-form">
+                <label for="nickname">Enter Your Nickname:</label>
+                <input type="text" id="nickname" required>
+                <button type="submit" id="start-btn">Start Quiz</button>
+            </form>
+        </section>
+
+        <!-- Quiz Container -->
+        <section id="quiz-container" class="quiz-container hidden">
+            <div class="timer" id="timer"><span id="time-left">10</span> seconds</div>
+            <div id="progress-bar" class="progress-bar"></div>
+            <h2 id="question">Question Text</h2>
+            
+            <!-- For multiple choice questions -->
+            <div class="answers" id="multiple-choice-container">
+                <!-- Radio buttons will be dynamically inserted here -->
+            </div>
+
+            <!-- For text input questions -->
+            <input type="text" id="text-answer" class="hidden" placeholder="Type your answer here">
+
+            <button id="submit-answer">Submit Answer</button>
+        </section>
+
+        <!-- Result Screen -->
+        <section id="result-screen" class="result-screen hidden">
+            <h1 id="result-message">Your Result</h1>
+            <table id="score-table"></table>
+            <button id="restart-btn">Restart Quiz</button>
+            <a href="#" id="highscore-link">View High Scores</a>
+        </section>
+    </div>
+</body>
+</html>
