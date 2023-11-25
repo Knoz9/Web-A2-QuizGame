@@ -3,6 +3,8 @@
 This is a single-page client application that allows users to participate in a quiz. The quiz questions are retrieved from a server using HTTP in a RESTful manner, and the user's answers are sent back to the server for validation. The game is built with JavaScript and organized using a JavaScript builder tool.
 
 [Here](https://coursepress.lnu.se/courses/web-programming/javascript-in-the-browser/assignment) are the assignment instructions.
+[Live Demo](https://km-quizapp.netlify.app)
+
 
 ## Screens
 <img src="src/img/Start.png" width="400">
